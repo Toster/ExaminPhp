@@ -12,6 +12,10 @@ class Person {
 
     private int $_Age;
 
+    protected int $_IdPerson;
+
+    protected string $_Email;
+
 //on peut voir que les propriete qui ont ete cree sont pour le nom, le prenom et l'age
 
     public function __construct($_Name, $_FirstName, $_Age) 
@@ -22,6 +26,10 @@ class Person {
                 $this -> _FirstName = strtolower($_FirstName);
 
                 $this -> _Age = $_Age;
+
+                $this -> _IdPerson = $_IdPerson;
+
+                $this -> _Email = $_Email;
 
 //name=string, firstname=string, age=int
 
@@ -83,6 +91,71 @@ class Person {
 
             }
 
+            public function getIdPerson(){
+
+                return $this-> _IdPerson;
+
+//permet de récupérer le contenu de la propriété IdPerson
+
+            }
+
+            public function setIdPerson($_IdPerson){
+
+                return $this-> _IdPerson;
+
+//permet de modifier le contenu de la propriété IdPerson
+
+            }
+
+            public function getEmail(){
+
+                return $this-> _Email;
+
+//permet de récupérer le contenu de la propriété Email
+
+            }
+
+            public function setEmail($_Email){
+
+                return $this-> _Email;
+
+//permet de modifier le contenu de la propriété Email
+
+            }
+
+}
+
+class Client extends Person {
+
+    protected string $entrepriseName
+
+    public function displayIdPerson() {
+
+        parent :: getIdPerson();
+    }
+
+    public function displayEmail() {
+
+        parent :: getEmail();
+
+    }
+
+}
+
+    class Employee extends Person {
+
+        protected string $entrepriseName
+    
+        public function displayIdPerson() {
+    
+            parent :: getIdPerson();
+        }
+    
+        public function displayEmail() {
+    
+            parent :: getEmail();
+    
+        }
 }
 
 ?>

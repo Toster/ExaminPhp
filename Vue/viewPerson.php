@@ -20,6 +20,10 @@
 
         <h3> <?php echo $person1->getAge();?> </h3>
 
+        <h3> <?php echo $person1->getIdPerson();?> </h3>
+
+        <h3> <?php echo $person1->getEmail();?> </h3>
+
     </li>
             
     <li>
@@ -29,6 +33,10 @@
         <h3> <?php echo $person2->getFirstName();?> </h3>
 
         <h3> <?php echo $person2->getAge();?> </h3>
+        
+        <h3> <?php echo $person2->getIdPerson();?> </h3>
+
+        <h3> <?php echo $person2->getEmail();?> </h3>
 
     </li>         
 
@@ -39,6 +47,10 @@
         <h3> <?php echo $person3->getFirstName();?> </h3>
 
         <h3> <?php echo $person3->getAge();?> </h3>
+        
+        <h3> <?php echo $person3->getIdPerson();?> </h3>
+
+        <h3> <?php echo $person3->getEmail();?> </h3>
 
     </li>
             
